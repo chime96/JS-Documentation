@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link src="style.css" type="stylesheet" rel="text/css">
+
+<title>JS Documentation </title>
+</head>
+  
+<body>
+  <h1>JS DOCUMENTATION</h1><hr>
+  <!--Header-->
+  <header id="header"> 
+    <nav id="navbar">
+      <header><span class="content">Content</span></header><hr>
+      <div class="intro"><a class="nav-link" href="#Introduction">Introduction</a></div><hr>
+      
+      <div class="variable"><a class="nav-link" href="#Variable">Variable</a></div><hr>
+      
+      <div class="string"><a class="nav-link" href="#String">String</a></div><hr>
+      
+     <div class="comment"><a class="nav-link" href="#Comment">Comment</a></div><hr>
+      
+     <div class="comment"><a class="nav-link" href="#Array">Array</a></div><hr>
+      
+     <div class="condi"><a class="nav-link" href="#Conditional_Statement">Conditional_Statement</a></div><hr>
+    </nav>
+</header>
+  <!--Main-->
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header id="size">Introduction</header> 
+
+        <p>
+          <h4>JavaScript</h4>
+          JavaScript: is a Scripting or Programming Language  allows you to implement complex features on webpages, everytime a webpage does more than just sit there and display static information for  to look  - displaying timely content updates,interactive , animated 2D/3D graphics, scrolling videos.
+        </p>
+        <p>
+         <h4>What can JavaScript really do?</h4>
+         The core <em>Client-side</em> JavaScript Language consists of some common programming features that allows you to do things like:
+    
+          <ul>
+            <li>
+              Running codes in response to certain events occuring on a webpage.<br>
+              We use a click event(onclick()),to detect when a button is clicked and then the code that updates the text label.
+            </li>
+            
+            <li>
+              Storing useful values inside variables.<br>
+              for example:<br>
+              
+              <strong>greetingWorld</strong> is a variable that has stored the value "Hello World", and when this value is called(gettingWorld;) on it provides the values that is stored in it.
+            </li>  
+          </ul> 
+           <div class="vl-intro"><pre>
+                 <code>
+                 <span class="let">let</span> greetingWorld = <span class="word">"Hello World"</span><span class="close">;</span>
+                 
+                 greetingWorld<span class="close">;</span>
+                 </code>
+              </pre></div>
+        </p>
+  
+    </section><hr>
+
+    <section class="main-section" id="Variable">
+      
+        <header id="size">Variable</header>
+        JavaScript Variables are containers for storing  values example:names, age, nameOfCountry, nameOfSchool etc.
+        <div class="vl-var"><pre>
+            <code>
+            <span class="let">let</span> name = <span class="word">"Amadi Godswill Chimeichea"</span><span class="close">;</span>
+            
+            <span class="let">let</span> age = <span class="number">24</span><span class="close">;</span>
+            
+            <span class="let">let</span> nameOfCounrty = <span class="word">"Nigeria"</span><span class="close">;</span>
+            
+            <span class="let">let</span> nameOfSchool = <span class="word">"Rivers State University"</span><span class="close">;<span>
+            </code>
+           </pre>
+        </div>
+     
+        
+      <p>
+        <h4>JavaScript Identifier</h4>
+          All JavaScript  variable must be identified with a unique .<br>
+       General rules for constructing names for variables:
+       <ul>
+         <li>
+          The names can contain letter,digits,underscore, and dollar signs.
+         </li>
+          The names are case senitive (name and Name) are different so have to be careful when naming your varibles.
+         <li>
+           Reserved words (JavaScript keyword) can not be used as .
+         </li>
+       </ul>
+      </p>
+
+   <p>
+      <h4>The Assignment Operator</h4>
+        In JavaScript the equal sign (=) is "assignment operator" not an equal operaror, example:
+        "y = y + 3", it makes sense because it assigns "y + 3" to the variable y.
+      
+   </p>
+      
+    </section><hr>
+    
+    <section class="main-section" id="String">
+        <header id="size">String</header>
+         <p>
+           The string object is used to reprsent and manipulate a sequence of characters.
+         </p>
+
+         <p>
+           <h4>Description</h4>
+           Strings are used in holding data can be presented in text. some of the most used operations on strings: 
+           <ul>
+             
+              <li>
+               toString():Returns the values to string form or object.
+              </li>
+
+              <li>
+                toUpperCase():Converts a String to uppercase letters.
+              </li>
+             
+              <li>
+                replace(): Searches a string for a specified value or a regular expression and returns a new string where the specified value are replaced.<br>    
+              </li>
+             </ul>  
+             <div class="vl-str"><pre>
+                   <code>
+                      <span class="let">let</span> name = <span class="word">"Amadi Chimeichea Godswill"</span><span class="close">;</span>
+                      
+                      name.replace(<span ="word">"Chimeichea"</span>,<span class="word">"Ovurizi"</span>)<span class="close">;</span>
+                      
+                      name<span class="close">;</span>
+                   </code>
+                </pre>
+              </div>
+         </p>
+       
+      
+    </section><hr>
+    
+    <section class="main-section" id="Comment">
+        <header id="size">Comment</header> 
+        <p>
+          <h4>Single Comment(//)</h4>
+           Single line comments start with //.<br>
+Any text between // and the end of the line will be ignored by JavaScript (will not be executed).
+        </p>
+        <p>
+          Example:<br>
+          <div class="vl-single"><pre>
+          <code>
+            <span class="single-comment">//Declaring a Variable and allocating a value it.</span>
+            <span class="let">let</span> hello = <span class="word">"Hello World"</span><span class="close">;</span>
+            
+            hello<span class="close">;</span>
+          </code>
+         </pre>
+        </div>
+        </p>
+
+        <p>
+          <h4>Multiple Comment(/**/)</h4>      
+          Multi-line comments start with /* and end with */<br>
+        Any text between /* and */ will be ignored by JavaScript.<br>
+        This example uses a multi-line comment (a comment block) to explain the code:
+        <div class="vl-multiple">
+          <pre>
+          <code>
+             <span class="multiple-comment">/*snippet
+             const name = Amadi Godswill Chimeichea";
+             
+             let newName = name;
+             
+             newName;
+             */</span>
+         </code>
+        </pre>
+       </div>
+
+        </p>
+        
+    </section><hr>
+    
+    <section class="main-section" id="Array">
+        <header id="size">Array</header>
+         <p>
+            <h4>What is an Array?</h4>
+              An array is a special variable, which can hold more               than one value at a time.<br>
+If you have a list of items (a list of items, for example), storing the foodstuff in single variables could look like this:<br>
+            <div class="vl-array"><pre>
+            
+              <code>
+              <span class="let">let</span> foodStuff = [<span class="word">"Bread"</span>,<span class="word">"Bag of Rice"</span>,<span class="word">"Bag of Beans"</span>,
+              <span class="word">"Tin Tomatoes"</span>
+              ,<span class="word">"Pack of Noodle"</span>]<span class="close">;</span>
+              
+              foodStuff<span class="close">;</span>
+                   </code>
+                   </pre>
+                 </div>
+                     
+                   </p>
+
+         <p>
+           <h4>Creating an Array</h4>
+            Using an array literal is the easiest way to create a JavaScript Array.<br>
+           Syntax:
+           <pre>
+              <code>
+              <span class="let">let</span> arrayName = [<span class="word">"Item1"</span>,<span class="word">"Item2"</span>,<span class="word">"Item3"</span>,<span class="word">"Item4"</span>]<span class="close">;</span>
+              </code>
+           </pre>
+         </p>
+         
+         <p>
+          <h4>Accessing the Element in Array</h4>
+             You can access an Array by Indexing its number.<br>
+             For example:
+             <div class="vl-array1"><pre>
+               <code>
+               <span class="let">let</span> foodStuff = [<span class="word">"Bread"</span>,<span class="word">"Bag of Rice"</span>,
+<span class="word">"Bag of Beans"</span>,<span class="word">"Tin Tomatoes"</span>,<span class="word">"Pack of Noodle"</span>]<span class="close">;</span>
+               
+              foodStuff<span class="close">;</span>
+              
+              <span class="single-comment">//To access a Particular Item we'll:</span>
+              
+              <span class="multiple-comment">/*call a new variable and and include a square
+              bracket with an Index[0]*/</span>
+              
+              <span class="let">let</span> takeOneFoodStuff = foodStuff[<span class="number">2</span>]<span class="close">;</span>
+              
+              takeOneFoodStuff; <span class="single-comment">//This turns "Bag of Beans".</span>
+               </code>
+             </pre>
+            </div>
+             
+             <div class="vl-array2">
+              <pre>
+               <code>
+                 <span class="single-comment">//This Code can get the same result.</span>
+                 
+                 <span class="let">let</span> takeOneFoodStuff = foodStuff[<span class="number">-2</span>]<span class="close">;</span>
+              
+                 takeOneFoodStuff<span class="close">;</span><span class="single-comment">//This turns "Bag of Beans".</span>
+               </code>
+             </pre>
+            </div>
+        </p>
+         
+    </section><hr>
+    
+    <section class="main-section" id="Conditional_Statement">
+        <header id="size">Conditional_Statement</header>  
+        <p>
+          <h4>Definition </h4>
+          The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed.
+         
+        </p>
+
+        <p>
+          <h4>Usage of If-Else conditional Statement </h4>
+             <ul>
+               <li>Use if to specify a block of code to be executed, if a specified condition is true</li>
+
+               <li>Use else to specify a block of code to be executed, if the same condition is false</li>
+               
+               <li>Use else if to specify a new condition to test, if the first condition is false</li>
+             </ul>
+        </p>
+      
+        <p>
+          <h4>Syntax</h4>
+          The if statement specifies a block of code to be executed if a condition is true:
+           <pre>
+             <code>
+              if(condition) {
+              //Blocks of codes to be executed if the condition is true}
+             </code>
+           </pre>
+           The else statement specifies a block of code to be executed if the condition is false:
+           <pre>
+             <code>
+              if (condition) {
+             // block of code to be executed if the condition is true
+                }
+                
+           else { 
+            // block of code to be executed if the condition is false
+                }
+             </code>
+           </pre>
+           The else if statement specifies a new condition if the first condition is false:
+           <pre>
+             <code>
+               if(condition) {
+               // block of code to be executed if condition true
+               }
+               
+               else if(condition1) {
+               //  block of code to be executed if the condition1 is 
+               false and condition2 is true
+               }
+               
+               else{
+               // block of code to be executed if the condition1
+               is false and condition2 is false
+               }
+             </code>
+           </pre>
+           </p>
+
+         <p>
+          <h4>Examples</h4>
+           <div class="vl-conditional-statement"><pre>
+             <code>
+              <span class="let">let</span> newPhone = true<span class="close">;</span>
+              <span class="let">let</span> result<span class="close">;</span>
+              
+              <span class="number">if</span>(newPhone === false){
+                  result = <span class="word">"The Price of the phone is too expensive"</span><span class="close">;</span>
+              }
+              
+              <span class="number">else</span>{
+                result = <span class="word">"I got another Phone"</span><span class="close">;</span>
+             }
+             </code>
+           </pre>
+
+           <pre>
+             <code>
+             <span class="let">let</span> newPhone = true<span class="close">;</span>
+             <span class="let">let</span> result<span    class="close">;</span>
+             
+              <span class="number">if</span>(newPhone === false){
+              result = <span class="word">"The Price of the phone is too expensive"</span><span class="close">;</span>
+              }
+              
+              <span class="number">elseif</span>(newPhone === true){
+                result = <span class="word">"I got a New Phone"</span>< class="close">;</span>
+             }
+             </code>
+           </pre>
+
+           <pre>
+             <code>
+              <span class="let">let</span> newPhone = true<span class="close">;</span>
+              <span class="let">let</span> result<span class="close">;</span>
+              
+              <span class="number">if</span>(newPhone === false){
+                  result = <span class="word">"The Price of the phone is too expensive"</span><span class="close">;</span>
+              }
+              
+              <span class="number">elseif</span>(newPhone === true){
+                result = <span class="word">"I got a New Phone"</span><span class="close">;</span>
+             }
+             
+             <span class="number">else</span>{
+               result = <span class="word">"I did not get any new phone at all"</span><span class="close">;</span>
+             }
+             </code>
+           </pre>
+          </div>
+         </p>
+    </section>
+  <!--Footer-->
+  
+  </footer>
+  
+</body>
+</html>
+
