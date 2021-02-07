@@ -1,0 +1,175 @@
+/*General*/
+*{
+    box-sizing:border-box;
+}
+
+/*body*/
+
+body{
+   background-color:lightgray;
+   font-family:monospace;
+}
+
+/*Media Query*/
+@media screen and (min-width:600px){
+  body{
+      display:float;
+  }
+  #header{
+     float:left;
+     width:30%;
+     position:-webkit-fixed;
+     position:fixed;
+     top:-2%;
+     border-right:2px solid black;
+     border-top:5px solid black;
+  }
+  
+  #main-doc{
+    float:right;
+    width:60%;
+  }
+  
+}
+
+/*header */
+#header{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   margin-top:25%;
+   margin-bottom:25%;
+}
+
+
+/*Main*/
+.main-section{
+     margin-top:5%;
+     margin-bottom:20%;
+}
+
+/*Footer*/
+
+/*header tag*/
+
+h1{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+
+h4{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   font-size:17px;
+}
+
+/*vl*/
+.vl-intro{
+    border-left:6px solid lime;
+}
+
+.vl-var{
+    border-left:6px solid lime;
+}
+
+.vl-str{
+   border-left:6px solid lime;
+}
+
+.vl-single{
+   border-left:6px solid lime; 
+}
+
+.vl-multiple{
+   border-left:6px solid lime;
+}
+
+.vl-array{
+   border-left:6px solid lime;
+}
+
+.vl-array1{
+   border-left:6px solid lime;
+}
+
+.vl-array2{
+  border-left:6px solid lime;
+}
+
+.vl-conditional-statement{
+  border-left:6px solid lime;
+}
+
+
+/*Classes*/
+.nav-link{
+    font-size:20px;
+}
+
+/*ID*/
+#size{
+    font-weight:bold;
+    font-size:35px;
+    margin-bottom:5%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/*Anchor*/
+a{
+    text-decoration:none;
+}
+
+/*span*/
+.content{
+   font-size:25px;
+}
+
+.let{
+   color:red;
+}
+
+.word{
+    color:green;
+}
+
+.close{
+   color:red;
+}
+
+.number{
+  color:blue;
+}
+
+.single-comment{
+  color:gray;
+}
+
+.multiple-comment{
+  color:gray;
+}
+
+/*Pre-Code*/
+pre{
+    font-size:14px;
+    background-color:white;
+  
+}
+
+/*Paragraph*/
+
+p{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+
+/*DIV*/
+.intro,.variable,.string,.comment,.array,.condi{
+  margin-top:10%;
+}
+
